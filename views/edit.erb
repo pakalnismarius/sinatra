@@ -1,0 +1,30 @@
+<h1>Edit customer</h1>
+<form action="/customers" method="post">
+<table border="2">
+<input type="hidden" value="<%= @customer.id %>" name ="id" >
+
+	<tbody >
+			<tr>
+				<th>ID</th>
+					<td><%= @customer.id %></td>
+			</tr>
+			<tr>
+				<th>Name</th>
+					<td><input type="text" value="<%= @customer.name %>" name ="name"> </td>
+			</tr>
+			<tr>
+				<th>Surname</th>
+					<td><input type="text" value="<%= @customer.surname %>" name ="surname"></td>
+			</tr>
+			<tr>
+				<th>Code</th>
+					<td><input type="text" value="<%= @customer.code %>" name ="code"></td>
+			</tr>
+			<tr>
+				<th>age</th>
+					<td><input type="text" value="<%= @customer.age %>" name ="age"></td>
+			</tr>
+		</tbody>
+	</table>
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
